@@ -1,0 +1,166 @@
+:root {
+    --black: #1B1927;
+    --indigo: rgba(0, 0, 0, 0.196);
+    --indigo-faded: rgba(149, 111, 255, 0.5);
+    --pink: #E57CF2;
+    --font-color: #DDD;
+    --main-font: 'Roboto', sans-serif;
+   }
+   body {
+    padding:0;
+    margin: 0;
+    font-family: var(--main-font);
+    background-image: url('../Assets/inkpunk-porsche-ke-5120x2880.jpg');
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    scroll-behavior: smooth;
+   }
+   h {
+    color: white;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 600;
+   }
+   p {
+    font-size: 20px;
+    color: var(--font-color);
+    font-weight: bold;
+    text-align: center;
+   }
+   #name-demo {
+    color: #FF0000;
+   }
+   .home-page-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../Assets/inkpunk-porsche-ke-5120x2880.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation: bg 10s linear infinite;
+   }
+   @keyframes bg {
+   
+   0% {
+    background-image: url('../Assets/inkpunk-porsche-ke-5120x2880.jpg');
+   }
+   50% {
+    background-image: url('../Assets/inkpunk-porsche-ke-5120x2880.jpg');
+   }
+   100% {
+   background-image: url('../Assets/inkpunk-porsche-ke-5120x2880.jpg');
+   }
+   
+   }
+   .home-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+   background: linear-gradient(185deg, rgba(5,5,5,0) 0%, rgba(50,50,61,0.6913953081232493) 48%, rgba(12,12,13,1) 93%);
+   
+   }
+   .account-box {
+    height: 80vh;
+    width: 300px;
+    border-radius: 15px;
+    border: 0.1px solid rgba(100,100,100);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--indigo);
+   }
+   header {
+    width: 30vw;
+    max-height: 15%;
+    display: flex;
+    justify-content: center;
+   }
+   #logo {
+    height: 75%;
+    width: auto;
+    margin-top: 20px;
+   }
+   ul {
+    list-style-type: none;
+    text-decoration: none;
+   }
+   li {
+    padding: 3px;
+    border-radius: 15px;
+    border: 1px solid var(--black);
+    line-height: 1.5em;
+    margin-left: -30px;
+    margin-bottom: 20px;
+    font-size: 0.8em;
+    color: var(--black);
+    width: 18vw;
+   }
+   input {
+    background: transparent;
+    border: none ;
+    
+   }
+   input[type="text"], input[type="password"] {
+    color: var(--font-color);
+    font-size: 1em;
+   }
+    ul label{
+        color: #DDD; 
+        font-weight: bold;
+        padding-bottom: 50px;
+    }
+   input:focus, textarea:focus, select:focus {
+    outline: none;
+   }
+   .sign-up {
+    background: var(--font-color);
+    color: var(--black);
+    text-align: center;
+    font-size: 0.9em;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    width: 150px;
+    transition: all .3s ease;
+   }
+   .sign-up:hover {
+    background: var(--font-color);
+    color: var(--black);
+    cursor: pointer;
+   }
+   .icon-wrapper {
+    width: 165px;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row; 
+   }
+   .icon-wrapper>i { 
+   height: 40px;
+    width: 18%;
+    margin: 7px;
+    font-size: 30px;
+   }
+   .account-box .sign_up{
+     color: #DDD;
+   }
+   .account-box .sign_up a{
+    text-decoration: none;
+  }
+
+  
+   @media screen and (max-width:600px) {
+    .account-box {
+    min-width: 80%;
+    height: 75vh;
+   }
+   li {
+    width: 45vw;
+   }
+   
+   }

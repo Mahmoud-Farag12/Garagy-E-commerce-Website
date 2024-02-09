@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Log In</title>
+    <!--My css-->
+    <link href="css/style_login.css" rel="stylesheet">
+    <!--Fontawsome-->
+    <link rel="stylesheet" href="css/all.min.css">
+    
+</head>
+
+<body>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <div class="home-page-wrapper">
+        <div class="home-page">
+            <div class="account-box">
+                <header>
+                    <img src="./Assets/private-garage.png" id="logo">
+                </header>
+                
+                <p>Welcome to Garagy!</p>
+                <ul>
+                    <label>E-mail</label>
+                    <li><input type="text"id="mail" />
+                    </li>
+                    <label>Password</label>
+                    <li><input type="password"id="pass" />
+                    </li>
+                </ul>
+                <button class="sign-up" onclick="validateName()">Log In</button>
+                <div class="icon-wrapper">
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-square-instagram"></i>
+                    <i class="fa-brands fa-square-whatsapp"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <br>
+                </div>
+                <label class="sign_up">Don't have an account? <a href="./sign_up.html">Sign-up</a></label>
+            </div>
+        </div>
+    </div>
+    <script>
+        function validateName() {
+            var x, text;
+            x = document.getElementById("name").value;
+            if (x == "") {
+                text = "Name must be filled";
+            } else {
+                text = "";
+            }
+            document.getElementById("name-demo").innerHTML = text;
+        }
+    </script>
+</body>
+
+</html>

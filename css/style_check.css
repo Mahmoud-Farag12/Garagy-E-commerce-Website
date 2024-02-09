@@ -1,0 +1,15 @@
+body{
+    background-image: url(../Assets/inkpunk-porsche-ke-5120x2880.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    font-weight: bold;
+    color: #ddd;
+    margin: 0%;
+    padding: 0%;
+}
+.layout{
+    height: auto;
+    width: 100%;
+    
+    background-color: rgba(0,0,0,0.5);
+}
